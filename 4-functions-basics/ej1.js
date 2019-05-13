@@ -8,8 +8,14 @@
 
 let duplicaNumero = (numero) => {
     // Aquí tu código.  Desde aquí:
+    if(typeof(numero) === 'number'){
+        return numero * 2;
+    }
+    else{
+        return 'Debo ser ejecutada con un numero';
+    }
    
-
+console.log(duplicaNumero);
 
     // Hasta aquí.
 }
