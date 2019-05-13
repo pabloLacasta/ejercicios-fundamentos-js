@@ -33,3 +33,9 @@ let gente = [{
     },
 ]
 
+ nombreMas4Letras = gente.filter(function(persona) {
+    if(persona.nombre.length === 4) {
+        console.log(persona.nombre);
+    }
+    }
+);
