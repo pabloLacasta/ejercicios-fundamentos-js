@@ -10,6 +10,18 @@
 
 // Aquí tu código
 
+let muestraPorConsolaEurosEnPesetas = euros =>{
+    if(typeof euros === 'number'){
+        console.log( euros * 168);
+    }
+    else if(typeof euros === 'undefined'){
+        return undefined;
+    }
+     else if(typeof euros !== 'number'){
+         throw new Error('convierteEurosEnPesetas debe recibir un number');
+     }
+ }
+
 
 // Hasta aquí
 
