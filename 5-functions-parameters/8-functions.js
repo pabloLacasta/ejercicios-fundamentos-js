@@ -7,7 +7,14 @@
 //  throw new Error('convierteEurosEnPesetas debe recibir un number');
 
 // Aquí tu código
-
+let convierteEurosEnPesetas = euros => {
+   if(typeof euros === 'number'){
+       return euros * 168;
+   }
+    else if(typeof euros !== 'number'){
+        throw new Error('convierteEurosEnPesetas debe recibir un number');
+    }
+}
 // Hasta aquí
 
 
