@@ -15,7 +15,11 @@ for (let i = 0; i < giveMeIntegerRandom(10); i++) {
 }
 console.log('El array original es:  arr =', arr);
 // Aquí tu código
-
+var dobleArr = [];
+for (let elemento of arr){
+    let doble = elemento * 2;
+    dobleArr.push(doble);
+}
 
 
 
