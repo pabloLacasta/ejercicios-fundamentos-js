@@ -13,7 +13,17 @@
 let transformaArrayEnOtraConSusLongitudes = (arrayDeStrings) => {
     let arrayDeLongitudes = [];
     // Aquí tu código.  Desde aquí:
+    if (typeof arrayDeStrings === 'object' && arrayDeStrings.length >= 0){
+        for(let elemento of arrayDeStrings){
+        arrayDeLongitudes.push(elemento.length);
+        }
+        return arrayDeLongitudes;
+    }
 
+    else {
+        return 'Debo ser ejecutada con un array';
+    }
+    
     // Hasta aquí.
     return arrayDeLongitudes
 }
