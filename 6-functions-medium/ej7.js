@@ -12,7 +12,16 @@
 let sumaDesdeHasta = (desde, hasta) => {
     let sumatorio = 0;
     // Aquí tu código.  Desde aquí:
+    if(typeof desde !== 'number' || typeof hasta !== 'number'){
+        throw new Error('Debo recibir números');
+    }
+    else{
+    for(var min = Math.min(desde, hasta) ; min <= Math.max(desde, hasta); min++){
+        sumatorio += min;
+    }
 
+
+    }
     // Hasta aquí.
     return sumatorio;
 }
